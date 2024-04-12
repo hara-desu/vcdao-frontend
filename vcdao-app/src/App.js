@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Navibar from './component/navibar';
+import Proposal from './component/Proposal';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navibar />
+      <div className='proposal-container'>
+        <Proposal />
+        <Proposal type="add" />
+      </div>
     </div>
   );
 }
