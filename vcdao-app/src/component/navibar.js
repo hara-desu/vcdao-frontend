@@ -1,5 +1,6 @@
 import react from "react";
-import "../App.css"
+import "../App.css";
+import MetaMask from "../MetaMask";
 
 function Navibar(props) {
     return (
@@ -9,7 +10,7 @@ function Navibar(props) {
                 <h2 className="item">Funding</h2>
                 <h2 className="item">Proposal</h2>
                 <h2 className="item">Mint</h2>
-                <button className="btn">Connect Wallet</button>
+                <MetaMask />
             </div>
         </div>
     );
