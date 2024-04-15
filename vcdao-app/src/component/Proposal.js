@@ -1,16 +1,17 @@
 import react from "react";
-import "../App.css"
+import "../App.css";
 
 function Proposal({ type }) {
-    if (type === 'add') {
-        return (
-            <div className="proposal add-proposal">
-                <div className="board">
-                    <div className='add-content'>+</div>
-                </div>
-            </div>
-        )
-    }
+    // if (type === 'add') {
+    //     return (
+    //         <div className="proposal add-proposal">
+    //             <div className="board">
+    //                 <div className='add-content'>+</div>
+    //             </div>
+    //         </div>
+    //     )
+    // }
+
     return (
         <div className="proposal">
             <div className="board">
@@ -36,7 +37,14 @@ function Proposal({ type }) {
                 </div>
             </div>
 
+            <div className="board">
+                <button className='add-content'>
+                    +
+                </button>
+            </div>
+
         </div>
+
     );
 }
 

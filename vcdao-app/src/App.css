@@ -116,5 +116,8 @@
 .add-content {
     font-size: 48px;
     /* "+" 문자의 크기 설정 */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 

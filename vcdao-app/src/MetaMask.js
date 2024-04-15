@@ -14,7 +14,7 @@ const MetaMask = () => {
                 accountChanged([result[0]]);
             }) 
         } else {
-            setErrorMessage('Install MetaMask, please!')
+            setErrorMessage('Install MetaMask!')
         }
     }
 
@@ -26,14 +26,16 @@ const MetaMask = () => {
         <div className="item">
             {!defaultAccount ? (
                 errorMessage ? (
-                    <h3 className="item">{errorMessage}</h3>
+                    // TODO: Fix to make a popup with error 
+                    // if metamask isn't installed
+                       <h3>{errorMessage}</h3>
                 ) : (
                     <button className="btn" onClick={connectWallet}>
                         Connect Wallet
                     </button>
                     )
             ) : (
-                <h3 className="item">Address: {defaultAccount}</h3>
+                <h3>Address: {defaultAccount}</h3>
             )}
         </div>
     )
