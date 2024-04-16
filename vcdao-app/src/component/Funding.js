@@ -1,9 +1,10 @@
 import react from "react";
-import "../App.css"
+import "../App.css";
+import "../styles/Funding.css";
 
 function Funding() {
     return (
-        <div className="proposal">
+        <div className="funding">
             <div className="board">
                 <div className="board-header">
                     <p>Project Name</p>
@@ -18,7 +19,7 @@ function Funding() {
                         <p>NFT</p>
                     </div>
                     <div className="board-footer">
-                        <button>Burn NFT & Claim</button>
+                        <button className="funding-button">Burn NFT & Claim</button>
                     </div>
                 </div>
             </div>

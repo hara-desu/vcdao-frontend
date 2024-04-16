@@ -5,17 +5,6 @@
     justify-content: center;
 }
 
-.proposal-container {
-    display: flex;
-    /* Flexbox 레이아웃 사용 */
-    margin: 0;
-    /* 가로축 중앙 정렬 */
-    align-items: center;
-    /* 세로축 중앙 정렬 */
-    justify-content: center;
-}
-
-
 .menu {
     display: flex;
     margin-left: 60px;
@@ -38,13 +27,9 @@
 .btn {
     margin-left: 100px;
     width: 100px;
-}
-
-/* propsal */
-.proposal {
-    margin-left: 20px;
-    display: flex;
-    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    background-color: none;
 }
 
 .round {
@@ -62,7 +47,7 @@
     /* 박스의 너비 */
     height: 500px;
     /* 박스의 높이 */
-    background-color: #e17055;
+    background-color: #a29592;
     /* 박스의 배경색 */
     border: 3px solid #ccc;
     /* 박스의 테두리 */
@@ -104,20 +89,4 @@
     margin-top: 20px;
 }
 
-.add-proposal {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    /* 원하는 높이 설정 */
-}
-
-.add-content {
-    font-size: 48px;
-    /* "+" 문자의 크기 설정 */
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
 

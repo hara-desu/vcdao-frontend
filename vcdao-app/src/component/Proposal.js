@@ -1,5 +1,6 @@
 import react from "react";
 import "../App.css";
+import "../styles/Proposal.css";
 
 function Proposal({ type }) {
     // if (type === 'add') {
@@ -28,7 +29,9 @@ function Proposal({ type }) {
                         <p>NFT</p>
                     </div>
                     <div className="board-footer">
-                        <button>fire logo</button>
+                        <button className='proposal-button'>
+                            Fire logo
+                        </button>
                     </div>
                     <div className="board-add">
 
@@ -38,11 +41,12 @@ function Proposal({ type }) {
             </div>
 
             <div className="board">
-                <button className='add-content'>
-                    +
-                </button>
+                <div className="add-content">
+                    <button className="proposal-button">
+                        +
+                    </button>
+                </div>
             </div>
-
         </div>
 
     );
